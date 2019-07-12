@@ -1,0 +1,13 @@
+{
+  "name": "jeyroik/extas-player-current",
+  "description": "Extas current player package",
+  "require": {
+    "jeyroik/extas-foundation": "*",
+    "jeyroik/extas-players":"*"
+  },
+  "autoload": {
+    "psr-4": {
+      "extas\\": "src/"
+    }
+  }
+}
