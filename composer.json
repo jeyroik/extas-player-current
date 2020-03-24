@@ -2,8 +2,7 @@
   "name": "jeyroik/extas-player-current",
   "description": "Extas current player package",
   "require": {
-    "jeyroik/extas-foundation": "*",
-    "jeyroik/extas-players":"*"
+    "jeyroik/extas-players":"1.*"
   },
   "autoload": {
     "psr-4": {
