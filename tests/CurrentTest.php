@@ -34,5 +34,6 @@ class CurrentTest extends TestCase
         ]));
 
         $this->assertEquals('test', Current::player()->getName());
+        $this->pluginRepo->delete([Plugin::FIELD__CLASS => 'tests\\TestUser']);
     }
 }
