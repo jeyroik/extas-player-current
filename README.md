@@ -1,4 +1,8 @@
-# extas-player-current
+![tests](https://github.com/jeyroik/extas-player-current/workflows/PHP%20Composer/badge.svg?branch=master&event=push)
+![codecov.io](https://codecov.io/gh/jeyroik/extas-player-current/coverage.svg?branch=master)
+<a href="https://github.com/phpstan/phpstan"><img src="https://img.shields.io/badge/PHPStan-enabled-brightgreen.svg?style=flat" alt="PHPStan Enabled"></a>
+
+# Описание
 
 Пакет содержит обёртку для получения текущего авторизованного пользователя с помощью плагинов.
 
@@ -47,7 +51,7 @@ class PluginCookieCurrentPlayer extends Plugin
              * var $playerRepo IPlayerRepository
              */
             $playerRepo = SystemContainer::getItem(IPlayerRepository::class);
-            $currentPlayer = $playerRepo->one([IPlayer::FIELD__NAME => $name]);
+            $currentPlayer = $playerRepo->one([IPlayer::FIELD__NAME => $playerName]);
             $currentPlayer && ($player = $currentPlayer);
         }
     }

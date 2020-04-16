@@ -3,6 +3,7 @@ namespace extas\components\players;
 
 use extas\components\Item;
 use extas\interfaces\players\IPlayer;
+use extas\interfaces\stages\IStageExtasPlayerCurrent;
 
 /**
  * Class Current
@@ -66,7 +67,10 @@ class Current extends Item
     {
         $player = new Player();
 
-        foreach ($this->getPluginsByStage(static::STAGE__PLAYER_CURRENT) as $plugin) {
+        foreach ($this->getPluginsByStage(IStageExtasPlayerCurrent::NAME) as $plugin) {
+            /**
+             * @var IStageExtasPlayerCurrent $plugin
+             */
             $plugin($player);
         }
 
