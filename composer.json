@@ -14,10 +14,10 @@
     "psr-4": {
       "extas\\": "src/",
       "tests\\": "tests/"
-    },
-    "scripts": {
-      "test": "vendor/bin/phpunit --testdox --coverage-clover=coverage.xml --whitelist=src tests",
-      "stan": "vendor/bin/phpstan analyse -l 5 src"
     }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --testdox --coverage-clover=coverage.xml --whitelist=src tests",
+    "stan": "vendor/bin/phpstan analyse -l 5 src"
   }
 }
